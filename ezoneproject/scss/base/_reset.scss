@@ -1,3 +1,47 @@
+@use "colors";
+
+body {
+  background-color: colors.$grey;
+}
 h1 {
-  color: red;
+  font-size: 70px;
+  font-size: 4.375rem;
+  font-family: uniform-pro-con-black, sans-serif;
+  letter-spacing: 0.05em;
+  color: colors.$orangelight;
+  transition: all 0.4s ease-in;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.h1 {
+  color: colors.$grey;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: colors.$orangelight;
+  margin-top: 0;
+}
+.h1wrapper {
+  text-align: center;
+  width: 100%;
+  max-height: 840px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  z-index: -1;
+}
+p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  display: block;
+  line-height: 150%;
+  text-align: center;
+  color: colors.$orangelight;
+  transition: all 0.4s ease-in;
+  max-width: 38.125rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
