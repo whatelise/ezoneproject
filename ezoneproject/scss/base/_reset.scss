@@ -17,7 +17,6 @@ body {
   background-color: colors.$grey;
 }
 h1 {
-  font-size: 70px;
   font-size: 4.375rem;
   font-family: uniform-pro-con-black, sans-serif;
   letter-spacing: 0.05em;
@@ -28,7 +27,7 @@ h1 {
 }
 .h1 {
   color: colors.$grey;
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-width: 0.05rem;
   -webkit-text-stroke-color: colors.$orangelight;
   margin-top: 0;
 }
@@ -45,7 +44,6 @@ h1 {
   z-index: -1;
 }
 p {
-  font-size: 13px;
   font-size: 0.8125rem;
   display: block;
   line-height: 150%;
