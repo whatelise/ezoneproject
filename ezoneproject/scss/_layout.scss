@@ -9,6 +9,7 @@ nav {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.11765);
   justify-content: space-between;
   padding: 1.875rem 2.5rem;
+  z-index: 99;
 }
 
 .burger-menu {
@@ -61,14 +62,15 @@ section {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.11765);
   overflow-x: auto;
   scroll-snap-type: inline proximity;
-  scrollbar-width: thin;
 }
 
 article {
   column-count: 2;
-  column-gap: 2rem;
-  padding-left: 6vw;
-  padding-right: 6vw;
+  column-gap: 1rem;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .img-container {
@@ -89,6 +91,14 @@ article {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  article {
+    column-count: 2;
+    column-gap: 2rem;
+    margin: 1rem;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   article {
     column-count: 3;
@@ -96,11 +106,17 @@ article {
     margin: 1rem;
   }
 }
-
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   article {
     column-count: 4;
     column-gap: 2rem;
     margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #carousel {
+    width: 100%;
+    justify-content: center;
   }
 }
