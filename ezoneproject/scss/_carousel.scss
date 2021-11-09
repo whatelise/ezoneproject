@@ -1,0 +1,55 @@
+@use "base/colors.scss";
+
+#carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#carousel {
+  .area {
+    width: 14rem;
+    height: 19rem;
+    background-color: colors.$blue;
+    margin: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .areaheader {
+    text-align: left;
+    margin-top: 1.4rem;
+  }
+  .areadescription {
+    text-align: left;
+    padding: 1.06rem;
+    margin-top: 0;
+    letter-spacing: 0.001rem;
+    word-spacing: 0.01px;
+    line-height: 1.6rem;
+    color: colors.$white;
+  }
+
+  button {
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    transform: translate(18%, -50%);
+  }
+  .area1 {
+    background-color: colors.$bluelight;
+  }
+  .area2 {
+    background-color: colors.$orange;
+  }
+  .area3 {
+    background-color: colors.$lightgrey;
+  }
+  .area4 {
+    background-color: colors.$blue;
+  }
+  .area5 {
+    background-color: colors.$mediumgrey;
+  }
+}
