@@ -59,14 +59,13 @@ section {
   padding: 1rem;
   border-top: 1px solid hsla(0, 0%, 100%, 0.11765);
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.11765);
-main {
-  margin-left: 10vw;
-  margin-right: 10vw;
 }
 
-section {
+article {
   column-count: 2;
   column-gap: 2rem;
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 
 .img-container {
@@ -76,7 +75,7 @@ section {
   transition: clip-path 0.3s ease-in-out 0.1s, -webkit-clip-path 0.3s ease-in-out 0.1s;
 }
 
-section {
+article {
   img {
     border-radius: 4px;
     top: 0%;
@@ -88,7 +87,7 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-  section {
+  article {
     column-count: 3;
     column-gap: 2rem;
     margin: 1rem;
@@ -96,7 +95,7 @@ section {
 }
 
 @media only screen and (min-width: 1000px) {
-  section {
+  article {
     column-count: 4;
     column-gap: 2rem;
     margin: 1rem;
