@@ -79,3 +79,9 @@ button {
   padding: 0.4rem;
   width: 7rem;
 }
+
+#carousel {
+  button:hover {
+    color: colors.$grey;
+  }
+}

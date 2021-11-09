@@ -10,6 +10,7 @@ nav {
   justify-content: space-between;
   padding: 1.875rem 2.5rem;
   z-index: 99;
+  background-color: colors.$navbackground;
 }
 
 .burger-menu {
@@ -77,7 +78,14 @@ article {
   display: inline-block; /* important to wrap notes not content */
   width: 100%;
   margin-top: 2em;
-  transition: clip-path 0.3s ease-in-out 0.1s, -webkit-clip-path 0.3s ease-in-out 0.1s;
+  transition: ease-out 0.3s;
+}
+
+.img:hover {
+  clip-path: inset(100%);
+}
+.img-container:hover {
+  transform: scale(1.04);
 }
 
 article {
@@ -85,7 +93,7 @@ article {
     border-radius: 4px;
     top: 0%;
     left: 0;
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     object-fit: cover;
   }
