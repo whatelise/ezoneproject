@@ -1,5 +1,5 @@
-header {
-}
+@use "base/colors";
+
 nav {
   position: fixed;
   top: 0;
@@ -28,4 +28,29 @@ nav {
   position: relative;
   background: #cdcdcd;
   border-radius: 1px;
+}
+
+footer {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.11765);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0rem;
+}
+
+.footer-links a {
+  padding-bottom: 1.3rem;
+}
+
+.footer-extra-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  a {
+    padding-bottom: 0.4rem;
+  }
 }
