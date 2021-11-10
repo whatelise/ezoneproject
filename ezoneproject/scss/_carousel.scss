@@ -60,7 +60,11 @@
 
 #carousel {
   button:hover {
-    background-color: colors.$grey;
-    transition: ease-out 0.2s;
+    filter: brightness(0.8);
+    transition: ease-out 0.1s;
+  }
+  .selected {
+    background-color: colors.$green;
+    transition: ease-out 0.1s;
   }
 }
