@@ -2,7 +2,7 @@
 //scrollbar for all browsers
 #signup {
   scrollbar-width: thin;
-  scrollbar-color: colors.$grey colors.$mediumgrey;
+  /*   scrollbar-color: colors.$grey colors.$mediumgrey; */
 }
 
 #signup::-webkit-scrollbar {
