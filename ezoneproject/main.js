@@ -14,6 +14,14 @@ clickSignup();
 function clickSignup() {
   document.querySelectorAll(".btn-signup").forEach((item) => item.addEventListener("click", toggleSelect));
   document.querySelector("form").addEventListener("submit", post);
+  document.querySelector(".x").addEventListener("click", closePopup);
+}
+
+function closePopup() {
+  Object.assign(Signup, { email: "" });
+  Object.assign(Signup, { area: [] });
+  document.querySelectorAll(".btn-signup").forEach((item) => (item.classList = "btn-signup"));
+  countSelected();
 }
 
 function toggleSelect(event) {
@@ -49,6 +57,11 @@ function countSelected() {
     document.querySelector(".popup").classList.add("movedown");
     document.querySelector(".movedown").addEventListener("animationend", reset);
   }
+  if (selectedAmount === 1) {
+    document.querySelector(".s").classList.add("hidden");
+  } else {
+    document.querySelector(".s").classList = "s";
+  }
 }
 
 function reset() {
@@ -56,6 +69,9 @@ function reset() {
   document.querySelector(".popup").classList.remove("movedown");
   document.querySelector(".popup").classList.remove("moveup");
   document.querySelector(".popup").classList.add("hidden");
+  document.querySelector(".x").removeEventListener("click", closePopup);
+  document.querySelector(".x").addEventListener("click", closePopup);
+  clickSignup();
 }
 
 function post(evt) {
@@ -77,9 +93,11 @@ function post(evt) {
       console.log(res);
       document.querySelector("input[type=submit]").disabled = false;
       form.elements.email.value = "";
-      document.querySelector(".popup p").classList.remove("hidden");
-      document.querySelector(".error").classList.remove("hidden");
+      /*       document.querySelector(".popup p").classList.remove("hidden"); */
+      document.querySelector(".yay").classList.remove("hidden");
     })
 
-    .then((response) => console.log(response));
+    .then((response) => {
+      console.log(response);
+    });
 }
