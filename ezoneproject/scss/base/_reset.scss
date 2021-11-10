@@ -82,6 +82,7 @@ button {
 
 #carousel {
   button:hover {
-    color: colors.$grey;
+    background-color: colors.$navbackground;
+    transition: ease-out 0.2s;
   }
 }
