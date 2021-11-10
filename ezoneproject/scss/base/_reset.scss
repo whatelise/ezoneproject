@@ -79,10 +79,3 @@ button {
   padding: 0.4rem;
   width: 7rem;
 }
-
-#carousel {
-  button:hover {
-    background-color: colors.$navbackground;
-    transition: ease-out 0.2s;
-  }
-}
