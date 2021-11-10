@@ -26,6 +26,7 @@ function toggleSelect(event) {
     Signup.area.splice(eventIndex, 1);
     countSelected();
   }
+  document.querySelector(".popup p").classList.add("hidden");
 }
 
 function getValue(event) {
@@ -40,6 +41,11 @@ function countSelected() {
   console.log(Signup.area.length);
   const selectedAmount = Signup.area.length;
   document.querySelector(".nl-count").innerHTML = selectedAmount;
+  if (selectedAmount > 0) {
+    document.querySelector(".popup").classList.remove("hidden");
+  } else {
+    document.querySelector(".popup").classList.add("hidden");
+  }
 }
 
 function post(evt) {
@@ -61,6 +67,7 @@ function post(evt) {
       console.log(response);
       document.querySelector("input[type=submit]").disabled = false;
       form.elements.email.value = "";
+      document.querySelector(".popup p").classList.remove("hidden");
     })
     .then((response) => console.log(response));
 }
