@@ -2,9 +2,10 @@
 import "./style.scss";
 /* import { toggleSelect } from "./modules/select";
 console.log(toggleSelect); */
+const form = document.querySelector(".nl-form");
 
 const Signup = {
-  email: "",
+  email: form.elements.email.value,
   area: [],
 };
 
@@ -41,7 +42,11 @@ function countSelected() {
   document.querySelector(".nl-count").innerHTML = selectedAmount;
 }
 
-function post() {
+function post(evt) {
+  evt.preventDefault();
+  let emailInput = form.elements.email.value;
+  Object.assign(Signup, { email: `${emailInput}` });
+  console.log(Signup);
   const postData = JSON.stringify(Signup);
   fetch("https://keasem2-551e.restdb.io/rest/ezone", {
     method: "POST",
@@ -52,6 +57,10 @@ function post() {
     },
     body: postData,
   })
-    .then((res) => res.json())
+    .then((response) => {
+      console.log(response);
+      document.querySelector("input[type=submit]").disabled = false;
+      form.elements.email.value = "";
+    })
     .then((response) => console.log(response));
 }
