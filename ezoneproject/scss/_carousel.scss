@@ -8,7 +8,7 @@
 
 #carousel {
   .area {
-    width: 12rem;
+    width: 11rem;
     height: 15rem;
     background-color: colors.$blue;
     margin: 1rem;
@@ -20,7 +20,7 @@
   .areaheader {
     font-size: 1.3em;
     text-align: left;
-    margin-top: 0rem;
+    margin-top: 0.2rem;
   }
 
   .areadescription {
@@ -29,7 +29,7 @@
     margin-top: 0;
     letter-spacing: 0.001rem;
     word-spacing: 0.01px;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     color: colors.$white;
     font-size: 0.9rem;
   }
@@ -38,7 +38,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 72%;
+    top: 78%;
     margin: auto;
   }
   .area1 {
