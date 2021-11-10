@@ -9,8 +9,8 @@
 #carousel {
   .area {
     width: 11rem;
-    height: 15rem;
-    background-color: colors.$blue;
+    height: 16rem;
+    background-color: colors.$cardbackground;
     margin: 1rem;
     border-radius: 10px;
     align-items: center;
@@ -29,7 +29,7 @@
     margin-top: 0;
     letter-spacing: 0.001rem;
     word-spacing: 0.01px;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     color: colors.$white;
     font-size: 0.9rem;
   }
@@ -42,18 +42,25 @@
     margin: auto;
   }
   .area1 {
-    background-color: colors.$bluelight;
+    border: 3px solid colors.$bluelight;
   }
   .area2 {
-    background-color: colors.$orange;
+    border: 3px solid colors.$orange;
   }
   .area3 {
-    background-color: colors.$lightgrey;
+    border: 3px solid colors.$lightgrey;
   }
   .area4 {
-    background-color: colors.$blue;
+    border: 3px solid colors.$blue;
   }
   .area5 {
-    background-color: colors.$mediumgrey;
+    border: 3px solid colors.$mediumgrey;
+  }
+}
+
+#carousel {
+  button:hover {
+    background-color: colors.$grey;
+    transition: ease-out 0.2s;
   }
 }

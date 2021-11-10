@@ -19,7 +19,9 @@
   src: url("../../fonts/uniform-pro-con-medium.ttf");
 }
 
-a {
+a,
+label,
+input[type="email"] {
   text-decoration: none;
   font-family: shapiro-regular;
   font-weight: regular;

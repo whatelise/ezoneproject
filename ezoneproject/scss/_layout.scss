@@ -75,6 +75,7 @@ article {
 }
 
 .img-container {
+  position: relative;
   display: inline-block; /* important to wrap notes not content */
   width: 100%;
   margin-top: 2em;
@@ -86,6 +87,7 @@ article {
 }
 .img-container:hover {
   transform: scale(1.04);
+  filter: brightness(0.7);
 }
 
 article {
@@ -96,6 +98,11 @@ article {
     max-width: 95%;
     height: auto;
     object-fit: cover;
+  }
+  .img-button {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
   }
 }
 
