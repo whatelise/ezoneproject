@@ -73,11 +73,13 @@ function post(evt) {
     },
     body: postData,
   })
-    .then((response) => {
-      console.log(response);
+    .then((res) => {
+      console.log(res);
       document.querySelector("input[type=submit]").disabled = false;
       form.elements.email.value = "";
       document.querySelector(".popup p").classList.remove("hidden");
+      document.querySelector(".error").classList.remove("hidden");
     })
+
     .then((response) => console.log(response));
 }
