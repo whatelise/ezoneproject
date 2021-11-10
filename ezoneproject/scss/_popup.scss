@@ -10,7 +10,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.moveup {
   animation: moveUp 1s 1;
+}
+.movedown {
+  animation: moveDown 1s 1;
 }
 @keyframes moveUp {
   from {
@@ -19,6 +24,15 @@
 
   to {
     transform: translateY(0%);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(100%);
   }
 }
 .popup {

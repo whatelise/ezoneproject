@@ -43,9 +43,19 @@ function countSelected() {
   document.querySelector(".nl-count").innerHTML = selectedAmount;
   if (selectedAmount > 0) {
     document.querySelector(".popup").classList.remove("hidden");
+    document.querySelector(".popup").classList.add("moveup");
+    document.querySelector(".popup").classList.remove("movedown");
   } else {
-    document.querySelector(".popup").classList.add("hidden");
+    document.querySelector(".popup").classList.add("movedown");
+    document.querySelector(".movedown").addEventListener("animationend", reset);
   }
+}
+
+function reset() {
+  document.querySelector(".movedown").removeEventListener("animationend", reset);
+  document.querySelector(".popup").classList.remove("movedown");
+  document.querySelector(".popup").classList.remove("moveup");
+  document.querySelector(".popup").classList.add("hidden");
 }
 
 function post(evt) {
