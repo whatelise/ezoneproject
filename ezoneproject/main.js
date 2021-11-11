@@ -1,13 +1,7 @@
-"use strict";
 import "./style.scss";
-/* import { toggleSelect } from "./modules/select";
-console.log(toggleSelect); */
+import { Signup } from "./modules/select";
+console.log("imported signup" + Signup);
 const form = document.querySelector(".nl-form");
-
-const Signup = {
-  email: form.elements.email.value,
-  area: [],
-};
 
 clickSignup();
 
